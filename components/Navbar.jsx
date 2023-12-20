@@ -5,12 +5,11 @@ import Image from 'next/image';
 
 const Navbar = () => {
   const navbarItems = [
-    { name: 'Projects', path: '/' },
-    { name: 'Resumé', path: '/about-us' },
+    { name: 'Linkedin', path: 'https://linkedin.com/in/hire-jacob' },
   ];
 
   return (
-    <nav className="px-10 py-4 z-20">
+    <nav className="px-10 py-4 z-20 bg-gray-100 text-black">
       <ul className="flex items-center space-x-4 text-md md:text-xl">
         <div className="ml-30 rounded-lg w-full">
           <Link href={'/'} legacyBehavior>

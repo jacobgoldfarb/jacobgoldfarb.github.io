@@ -9,11 +9,7 @@ module.exports = {
     "./src/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
-    extend: {
-      // fontSize: {
-      //   'tagline': '5rem',  // adjust the value to get the desired size
-      // },
-    },
+    extend: {},
   },
   plugins: [],
 }
