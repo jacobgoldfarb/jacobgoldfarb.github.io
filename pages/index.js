@@ -12,7 +12,6 @@ const imageFilenames = [
   'DSC02010-2.jpg',
   'DSC02025.jpg',
   'DSC02032-2.jpg',
-  'DSC02032.jpg',
   'DSC02054.jpg',
   'DSC02083.jpg',
   'DSC02088.jpg',
@@ -21,7 +20,6 @@ const imageFilenames = [
   'DSC02267.jpg',
   'DSC02284.jpg',
   'DSC02295-2.jpg',
-  'DSC02295.jpg',
   'DSC02337.jpg',
   'DSC02532.jpg',
   'DSC02714-HDR.jpg',
@@ -56,14 +54,16 @@ const Home = () => {
       title={"Jacob Goldfarb"}
       keywords="jacob, goldfarb, portfolio, software engineer, developer"
     >
-      <section>
-        <div className="relative container mx-auto md:px-0">
-          <div className="flex-col md:flex-row flex mt-8 mx-4">
+      <section className='mt-32'>
+        <div className="relative container mx-auto md:px-0 h-screen my-auto">
+          <div className="flex-col md:flex-row flex mx-4  h-screen">
             <div className="flex flex-col items-center md:items-start md:mt-10 md:mt-0 mr-32">
               <div className="text-3xl md:text-5xl text-center md:text-left font-semibold mb-6">
-                {"Hey, I'm"} <a href="https://linkedin.com/in/hire-jacob" className='underline'>{"Jacob."}</a>{" I design and implement products people like using."}
+                {"Hey, I'm Jacob. I design and implement products people like using."}
               <p className="text-lg md:text-xl mb-6 text-center md:text-left font-normal mt-10">
-                {"I strive to create beautiful experiences with code. i'm currently building at"} <a className="underline" href="https://gptzero.me">{"gptzero."}</a> {" I also like photography." }
+                {"I strive to create beautiful experiences with code. i'm currently building at "} 
+                <a href="https://gptzero.me">{"gptzero."}</a> {" I also like photography. check out my "} 
+                 <a href="https://github.com/jacobgoldfarb/">github</a>, <a href="https://linkedin.com/in/hire-jacob/">linkedin</a>, or shoot me an <a href="mailto:jacob_goldfarb@icloud.com">email.</a>
               </p>
             </div>
           </div>
