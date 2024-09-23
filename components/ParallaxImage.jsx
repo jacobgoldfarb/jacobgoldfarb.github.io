@@ -1,4 +1,5 @@
 import React, { useEffect, useRef } from "react";
+import Image from "next/image";
 
 const ParallaxImage = ({ src, alt, className }) => {
   const imageRef = useRef(null);
@@ -20,7 +21,13 @@ const ParallaxImage = ({ src, alt, className }) => {
 
   return (
     <div className={`relative overflow-hidden ${className}`} ref={imageRef}>
-      <img src={src} alt={alt} className="w-full max-h-[500px] object-cover" />
+      <Image
+        src={src}
+        alt={alt}
+        layout="fill"
+        objectFit="cover"
+        className="w-full max-h-[500px]"
+      />
     </div>
   );
 };
