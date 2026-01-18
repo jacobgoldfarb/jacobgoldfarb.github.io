@@ -2,7 +2,6 @@ import React from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 
-
 const Navbar = () => {
   const navbarItems = [
     { name: 'Linkedin', path: 'https://linkedin.com/in/hire-jacob' },

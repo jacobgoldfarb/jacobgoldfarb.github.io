@@ -2,8 +2,6 @@
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
 
-
-
 a {
   color: #5a6ce0;
   text-decoration: underline;
@@ -54,7 +52,9 @@ a {
   background: white;
   border-radius: 10px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
 }
 
 .card:hover {
@@ -71,7 +71,7 @@ a {
 }
 
 .parallax::before {
-  content: "";
+  content: '';
   position: absolute;
   top: 0;
   left: 0;

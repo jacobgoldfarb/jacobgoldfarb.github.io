@@ -1,5 +1,5 @@
-import React, { useEffect, useRef } from "react";
-import Image from "next/image";
+import React, { useEffect, useRef } from 'react';
+import Image from 'next/image';
 
 const ParallaxImage = ({ src, alt, className }) => {
   const imageRef = useRef(null);
@@ -13,9 +13,9 @@ const ParallaxImage = ({ src, alt, className }) => {
       }
     };
 
-    window.addEventListener("scroll", handleScroll);
+    window.addEventListener('scroll', handleScroll);
     return () => {
-      window.removeEventListener("scroll", handleScroll);
+      window.removeEventListener('scroll', handleScroll);
     };
   }, []);
 
