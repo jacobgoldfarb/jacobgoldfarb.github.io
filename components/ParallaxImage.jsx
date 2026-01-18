@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from 'react';
+import { useEffect, useRef } from 'react';
 import Image from 'next/image';
 
 const ParallaxImage = ({ src, alt, className }) => {
@@ -20,7 +20,7 @@ const ParallaxImage = ({ src, alt, className }) => {
   }, []);
 
   return (
-    <div className={`relative overflow-hidden  ${className}`} ref={imageRef}>
+    <div className={`relative overflow-hidden ${className}`} ref={imageRef}>
       <Image
         src={src}
         alt={alt}

@@ -38,22 +38,26 @@ const Home = ({ imageFilenames }) => {
     >
       <section className="mt-16">
         <div className="relative container mx-auto md:px-0 h-screen my-auto">
-          <div className="flex-col md:flex-row flex mx-4  h-screen">
-            <div className="flex flex-col md:flex-row items-center md:items-start md:mt-10 gap-12 md:gap-6 mr-32">
-              <div className="text-xl md:text-3xl text-center md:text-left font-semibold mb-6">
-                {
-                  "I'm Jacob. I design and implement products people like using."
-                }
-                <p className="text-lg md:text-xl mb-6 text-center md:text-left font-normal mt-4">
-                  {"I'm currently building at "}
-                  <a href="https://gptzero.me">{'gptzero.'}</a>{' '}
-                  {
-                    ' Outside of work I like photography, film, and baseball. check out my '
-                  }
-                  <a href="https://github.com/jacobgoldfarb/">github</a>,{' '}
-                  <a href="https://linkedin.com/in/hire-jacob/">linkedin</a>, or
-                  shoot me an{' '}
-                  <a href="mailto:jacob_goldfarb@icloud.com">email.</a>
+          <div className="flex flex-col md:flex-row mx-4 h-screen">
+            <div className="flex flex-col md:flex-row items-center md:items-start md:mt-10 gap-12 md:gap-6 md:mr-32">
+              <div className="max-w-xl">
+                <h1 className="text-xl md:text-3xl text-center md:text-left font-semibold mb-6">
+                  I&apos;m Jacob. I design and implement products people like using.
+                </h1>
+                <p className="text-lg md:text-xl text-center md:text-left">
+                  I&apos;m currently building at{' '}
+                  <a href="https://gptzero.me" target="_blank" rel="noopener noreferrer">
+                    GPTZero
+                  </a>
+                  . Outside of work I like photography, film, and baseball. Check out my{' '}
+                  <a href="https://github.com/jacobgoldfarb/" target="_blank" rel="noopener noreferrer">
+                    GitHub
+                  </a>
+                  ,{' '}
+                  <a href="https://linkedin.com/in/hire-jacob/" target="_blank" rel="noopener noreferrer">
+                    LinkedIn
+                  </a>
+                  , or shoot me an <a href="mailto:jacob_goldfarb@icloud.com">email</a>.
                 </p>
               </div>
               <ParallaxImage
