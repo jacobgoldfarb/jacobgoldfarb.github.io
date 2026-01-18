@@ -44,7 +44,7 @@ const Home = ({ imageFilenames }) => {
                 {"I'm Jacob. I design and implement products people like using."}
               <p className="text-lg md:text-xl mb-6 text-center md:text-left font-normal mt-4">
                 {"I'm currently building at "} 
-                <a href="https://gptzero.me">{"gptzero."}</a> {" I also like photography, film and baseball. check out my "} 
+                <a href="https://gptzero.me">{"gptzero."}</a> {" Outside of work I like photography, film, and baseball. check out my "} 
                  <a href="https://github.com/jacobgoldfarb/">github</a>, <a href="https://linkedin.com/in/hire-jacob/">linkedin</a>, or shoot me an <a href="mailto:jacob_goldfarb@icloud.com">email.</a>
               </p>
             </div>
