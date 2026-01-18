@@ -4,9 +4,14 @@
 /node_modules
 /.pnp
 .pnp.js
+.pnpm-store
 
 # testing
 /coverage
+
+# ide
+.vscode
+.idea
 
 # next.js
 /.next/
