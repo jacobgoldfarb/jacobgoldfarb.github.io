@@ -17,4 +17,4 @@ Open [http://localhost:3000](http://localhost:3000) to view the site.
 - React 18
 - Tailwind CSS
 
-I chose Next originally for the dead-simple deployment.
+I chose Next for its image optimizations, since I'm hosting several high-res photos.
