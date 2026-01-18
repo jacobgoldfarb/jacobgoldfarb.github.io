@@ -24,11 +24,11 @@ export default function Home({ images }) {
       title="Jacob Goldfarb"
       keywords="jacob, goldfarb, portfolio, software engineer, developer, gptzero"
     >
-      <section className="min-h-[80vh] flex items-center">
-        <div className="container mx-auto px-4 md:px-8">
+      <section className="min-h-[80vh] flex items-center mt-12">
+        <div className="container mx-auto">
           <div className="flex flex-col md:flex-row items-center gap-12 md:gap-16">
-            <div className="max-w-lg">
-              <h1 className="text-2xl md:text-4xl font-semibold mb-6 text-center md:text-left">
+            <div className="max-w-lg md:w-1/2">
+              <h1 className="text-xl md:text-3xl font-semibold mb-6 text-center md:text-left">
                 I&apos;m Jacob. I design and develop products people like using.
               </h1>
               <p className="text-lg md:text-xl text-center md:text-left leading-relaxed">
@@ -47,7 +47,7 @@ export default function Home({ images }) {
                 , or shoot me an <a href="mailto:jacob_goldfarb@icloud.com">email</a>.
               </p>
             </div>
-            <div className="w-full md:w-[500px] lg:w-[600px] aspect-[4/3]">
+            <div className="w-full md:w-[600px] aspect-[4/3]">
               <ImageGallery images={images} className="w-full h-full shadow-2xl" />
             </div>
           </div>
