@@ -22,7 +22,7 @@ export default function Home({ images }) {
   return (
     <Layout
       title="Jacob Goldfarb"
-      keywords="jacob, goldfarb, portfolio, software engineer, developer"
+      keywords="jacob, goldfarb, portfolio, software engineer, developer, gptzero"
     >
       <section className="min-h-[80vh] flex items-center">
         <div className="container mx-auto px-4 md:px-8">
