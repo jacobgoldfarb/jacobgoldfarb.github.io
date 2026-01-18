@@ -18,6 +18,13 @@ export async function getStaticProps() {
   };
 }
 
+const LINKS = {
+  github: 'https://github.com/jacobgoldfarb/',
+  linkedin: 'https://linkedin.com/in/jacob-goldfarb/',
+  email: 'mailto:jacob_goldfarb@icloud.com',
+  gptzero: 'https://gptzero.me',
+}
+
 export default function Home({ images }) {
   return (
     <Layout
@@ -33,18 +40,18 @@ export default function Home({ images }) {
               </h1>
               <p className="text-lg md:text-xl text-center md:text-left leading-relaxed">
                 I&apos;m currently building at{' '}
-                <a href="https://gptzero.me" target="_blank" rel="noopener noreferrer">
+                <a href={LINKS.gptzero} target="_blank" rel="noopener noreferrer">
                   gptzero
                 </a>
                 . Outside of work I like photography, film, and baseball. Check out my{' '}
-                <a href="https://github.com/jacobgoldfarb/" target="_blank" rel="noopener noreferrer">
+                <a href={LINKS.github} target="_blank" rel="noopener noreferrer">
                   github
                 </a>
                 ,{' '}
-                <a href="https://linkedin.com/in/hire-jacob/" target="_blank" rel="noopener noreferrer">
+                <a href={LINKS.linkedin} target="_blank" rel="noopener noreferrer">
                   linkedin
                 </a>
-                , or shoot me an <a href="mailto:jacob_goldfarb@icloud.com">email</a>.
+                , or shoot me an <a href={LINKS.email}>email</a>.
               </p>
             </div>
             <div className="w-full md:w-[600px] aspect-[4/3]">
