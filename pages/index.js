@@ -57,11 +57,11 @@ const Home = () => {
       <section className='mt-32'>
         <div className="relative container mx-auto md:px-0 h-screen my-auto">
           <div className="flex-col md:flex-row flex mx-4  h-screen">
-            <div className="flex flex-col items-center md:items-start md:mt-10 md:mt-0 mr-32">
-              <div className="text-3xl md:text-5xl text-center md:text-left font-semibold mb-6">
-                {"Hey, I'm Jacob. I design and implement products people like using."}
-              <p className="text-lg md:text-xl mb-6 text-center md:text-left font-normal mt-10">
-                {"I strive to create beautiful experiences with code. i'm currently building at "} 
+            <div className="flex flex-col items-center md:items-start md:mt-10 mr-32">
+              <div className="text-xl md:text-3xl text-center md:text-left font-semibold mb-6">
+                {"I'm Jacob. I design and implement products people like using."}
+              <p className="text-lg md:text-xl mb-6 text-center md:text-left font-normal mt-4">
+                {"I'm currently building at "} 
                 <a href="https://gptzero.me">{"gptzero."}</a> {" I also like photography. check out my "} 
                  <a href="https://github.com/jacobgoldfarb/">github</a>, <a href="https://linkedin.com/in/hire-jacob/">linkedin</a>, or shoot me an <a href="mailto:jacob_goldfarb@icloud.com">email.</a>
               </p>

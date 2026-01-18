@@ -1,4 +1,5 @@
-import React, { useEffect, useRef } from 'react';
+import React from 'react';
+import Image from 'next/image';
 
 const ParallaxImage = ({ src, alt, className }) => {
   const vignetteStyle = {
@@ -16,11 +17,13 @@ const imageContainerStyle = {
 };
 
   return (
-    <div className={`relative ${className}`}>
-      <img
+    <div className={`relative ${className}`} style={imageContainerStyle}>
+      <Image
         src={src}
         alt={alt}
         className="w-full max-h-[500px] object-contain "
+        width={1000}
+        height={1000}
       />
     </div>
   );
