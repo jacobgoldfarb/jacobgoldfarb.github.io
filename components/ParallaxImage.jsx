@@ -1,27 +1,30 @@
-import React from 'react';
-import Image from 'next/image';
+import React, { useEffect, useRef } from "react";
+import Image from "next/image";
 
 const ParallaxImage = ({ src, alt, className }) => {
-  const vignetteStyle = {
-    position: 'relative',
-    display: 'inline-block',
-    width: '100%',
-    height: '100%',
-    background: 'radial-gradient(circle, transparent 50%, black 100%)',
-    opacity: 0.5
-};
+  const imageRef = useRef(null);
 
-const imageContainerStyle = {
-    display: 'inline-block',
-    position: 'relative'
-};
+  useEffect(() => {
+    const handleScroll = () => {
+      if (imageRef.current) {
+        const scrollTop =
+          window.pageYOffset || document.documentElement.scrollTop;
+        imageRef.current.style.transform = `translateY(${scrollTop * 0.5}px)`;
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
 
   return (
-    <div className={`relative ${className}`} style={imageContainerStyle}>
+    <div className={`relative overflow-hidden  ${className}`} ref={imageRef}>
       <Image
         src={src}
         alt={alt}
-        className="w-full max-h-[500px] object-contain "
+        className="object-cover"
         width={1000}
         height={1000}
       />
